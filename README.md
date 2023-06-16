@@ -31,6 +31,8 @@ You can test if the files are working by running :
 node filename.js 
 # Author 
 I am the sole author of this entire project, all the entities of the attached files are original and under my ownership.
+# support 
+you can reach me via email at       judysigilai75@gmail.com for any inquiries or additional comments
  
  # license 
   This project is licensed under the MIT License 
