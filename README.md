@@ -16,6 +16,19 @@ I  wrote a program that prompts the user to input the student marks. The input s
  # Project Setup
 After creating the repository on your Github account, we go ahead and create either a folder containing all the three files or separately creating each javascript file for each challenge. We will go ahead and create the programs in the studentgrader.js, speed_detector.js, and netsalary.js respectively.
 
+1  Fork this repository .
+2 git clone this repository .
+3 cd week1-code-Challenge
+4 code . to open the repository on your IDE.
+
+For the building and running of this applications you will require to have the following;
+
+Web browser  Google Chrome 
+IDE , i.e Vscode.
+Node installed preferably v14.21.3.
+You can test if the files are working by running :
+
+node filename.js 
 # Author 
 I am the sole author of this entire project, all the entities of the attached files are original and under my ownership.
  
