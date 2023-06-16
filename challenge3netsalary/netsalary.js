@@ -1,20 +1,21 @@
 //Challenge 3: Net Salary Calculator (Toy Problem)
 //Write a program whose major task is to calculate an individual’s Net Salary 
 //by getting the inputs of basic salary and benefits
-const basicSalary = prompt("enter your basic salary ")
-const benefits= prompt("enter your benefits:")
+const basicSalary = prompt("enter your basic salary and benefits")
+
 
 //Calculate the payee (i.e. Tax), NHIFDeductions, NSSFDeductions, gross salary, and net salary. 
 
-// gross salary 
+// gross salary calculation
 function calculateGrossSalary() {
-  const   grossSalary = basicSalary + benefits
- alert(`Your gross salary is : ${grossSalary}`)
+   alert(`Your gross salary is : ${basicSalary}`)
 }
 calculateGrossSalary()
-//NHIFDeductions 	 
-function NHIFDeductions(basicSalary){
-    if(basicSalary<=5999){
+
+
+//NHIFDeductions 	calculations 
+function NHIFDeductions(){
+    if(basicSalary>=0 && basicSalary<=5999){
         alert(`your nhif deduction is: ${150}`)
     }
     else if(basicSalary>=6000 && basicSalary<=7999){
@@ -67,4 +68,47 @@ function NHIFDeductions(basicSalary){
     }
 
 }
-NHIFDeductions(basicSalary)
+NHIFDeductions()
+
+//calculation of payee
+     
+     function payee()
+     {
+       
+        if (basicSalary>=0 && basicSalary <= 24000)
+     {
+       const  payee1 = (0.1*basicSalary)
+        alert(`your payee is: ${payee1}`)
+    }
+    else if (basicSalary >=24001 && basicSalary <=32333) 
+    {
+       const  payee2=((basicSalary) * 0.25)
+        alert(`your payee is: ${payee2}`)
+    }
+    else if (basicSalary > 32333)
+    {
+       const  payee3 = ((basicSalary) * 0.3)
+        alert(`your payee is: ${payee3}`)
+    }
+     }
+    payee()
+
+    // calculation of NSSF 
+
+    function nssf1()
+    {
+        let nssf =0
+     if (basicSalary <= 6000)
+     {
+        nssf = 0.06*basicSalary
+        alert(`your nssf is: ${nssf}`)
+     }
+     else if (basicSalary >=60001 && basicSalary<=18000) {
+        nssf = (basicSalary * 0.06)
+        alert(`your nssf is: ${nssf}`)
+     }
+     else {
+        alert('invalid')
+     }
+    }
+    nssf1()
