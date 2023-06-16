@@ -16,6 +16,8 @@ I  wrote a program that prompts the user to input the student marks. The input s
  # Project Setup
 After creating the repository on your Github account, we go ahead and create either a folder containing all the three files or separately creating each javascript file for each challenge. We will go ahead and create the programs in the studentgrader.js, speed_detector.js, and netsalary.js respectively.
 
-# Author and License
+# Author 
 I am the sole author of this entire project, all the entities of the attached files are original and under my ownership.
-
+ 
+ # license 
+  This project is licensed under the MIT License 
