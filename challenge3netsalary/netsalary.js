@@ -1,20 +1,18 @@
 //Challenge 3: Net Salary Calculator (Toy Problem)
 //Write a program whose major task is to calculate an individual’s Net Salary 
 //by getting the inputs of basic salary and benefits
-const basicSalary = prompt("enter your basic salary and benefits")
+const basicSalary = prompt("enter your basic salary ")
+const benefits= prompt("enter your benefits:")
 
 //Calculate the payee (i.e. Tax), NHIFDeductions, NSSFDeductions, gross salary, and net salary. 
 
-//NHIFDeductions
-// Up to 5,999	150	 	40,000 - 44,999	1,000
-// 6,000 - 7,999	300	 	45,000 - 49,999	1,100
-// 8,000 - 11,999	400	 	50,000 - 59,999	1,200
-// 12,000 - 14,999	500	 	60,000 - 69,999	1,300
-// 15,000 - 19,999	600	 	70,000 - 79,999	1,400
-// 20,000 - 24,999	750	 	80,000 - 89,999	1,500
-// 25,000 - 29,999	850	 	90,000 - 99,999	1,600
-// 30,000 - 34,999	900	 	100,000 and above	1,700
-// 35,000 - 39,999	950	 	 
+// gross salary 
+function calculateGrossSalary() {
+  const   grossSalary = basicSalary + benefits
+ alert(`Your gross salary is : ${grossSalary}`)
+}
+calculateGrossSalary()
+//NHIFDeductions 	 
 function NHIFDeductions(basicSalary){
     if(basicSalary<=5999){
         alert(`your nhif deduction is: ${150}`)
