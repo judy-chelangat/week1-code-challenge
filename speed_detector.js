@@ -1,5 +1,6 @@
 //Challenge 2: Speed Detector (Toy Problem)
 //Write a program that takes as input the speed of a car e.g 80.
+const prompt = require("prompt-sync")();
 const speedOfCar =prompt("please input the speed of car:")
 
 //If the speed is less than 70, it should print “Ok”
@@ -11,17 +12,17 @@ const speedOfCar =prompt("please input the speed of car:")
 
 
 if(speedOfCar<70){
-    alert("Ok")
+    console.log("Ok");
 }
 else {
    function speedOver(){    
     let demerit=(speedOfCar-70)/5
     if(demerit>12){
-        alert("License suspended")
+        console.log("License suspended");
     }
     else{
         const message =`Points: ${demerit}`
-        alert(message)
+        console.log(message);
     }
    }
    speedOver()
