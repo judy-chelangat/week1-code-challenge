@@ -112,3 +112,9 @@ NHIFDeductions()
      }
     }
     nssf1()
+
+    // net pay
+    
+    netSalary = grossSalary-(NHIFDeductions + nssf1 + payee)
+     alert(`Your net salary is : ${netSalary}`);
+    
