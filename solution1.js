@@ -1,4 +1,4 @@
-//challenge 1 solution 
+//challenge 1 solution Student Grade Generator (Toy Problem)
 //Write that prompts the user to input student marks.
 const studentMarks =prompt("Input students marks:")
 
